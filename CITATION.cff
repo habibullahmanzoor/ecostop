@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use EcoStop-Bench or the analysis code, please cite the paper and this release."
+title: "EcoStop: benchmark, protocols, code and results for risk-controlled early stopping"
+type: dataset
+authors:
+  - family-names: Althobaiti
+    given-names: Turke
+  - family-names: Manzoor
+    given-names: Habib Ullah
+  - family-names: Manzoor
+    given-names: Sanaullah
+  - family-names: Ramzan
+    given-names: Naeem
+date-released: "2026-10-14"
+doi: "[DOI to be assigned on deposit]"
+repository-code: "https://github.com/habibullahmanzoor/ecostop"
+url: "https://github.com/habibullahmanzoor/ecostop"
+license: MIT
+keywords:
+  - early stopping
+  - energy-efficient training
+  - risk control
+  - benchmark

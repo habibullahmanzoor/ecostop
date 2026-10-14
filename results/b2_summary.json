@@ -1,0 +1,10 @@
+{
+  "n_jobs": 6,
+  "oracle_epochs_saved_ft": 27.91666666666666,
+  "oracle_energy_saved_ft": 30.342631904530336,
+  "gap_ft_pp": 2.4259652378636702,
+  "oracle_epochs_saved_ctrl": 32.50000000000001,
+  "oracle_energy_saved_ctrl": 32.40002407612268,
+  "gap_ctrl_pp": -0.09997592387731509,
+  "n_paired": 6
+}

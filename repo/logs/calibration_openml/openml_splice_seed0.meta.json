@@ -1,0 +1,12 @@
+{
+  "dataset": "splice",
+  "model": "tabular_mlp",
+  "seed": 0,
+  "epochs": 60,
+  "batch_size": 32,
+  "lr": 0.05,
+  "weight_decay": 0.0001,
+  "in_features": 287,
+  "num_classes": 3,
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU"
+}

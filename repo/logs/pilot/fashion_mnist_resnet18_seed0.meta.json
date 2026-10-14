@@ -1,0 +1,10 @@
+{
+  "dataset": "fashion_mnist",
+  "model": "resnet18",
+  "seed": 0,
+  "epochs": 40,
+  "batch_size": 256,
+  "lr": 0.1,
+  "weight_decay": 0.0005,
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU"
+}

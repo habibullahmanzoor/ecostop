@@ -1,0 +1,11 @@
+{
+  "dataset": "MagicTelescope",
+  "seed": 3,
+  "hidden": 256,
+  "opt": "adamw",
+  "lr": 0.002,
+  "wd": 0.01,
+  "epochs": 100,
+  "bs": 64,
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU"
+}

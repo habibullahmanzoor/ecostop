@@ -1,0 +1,35 @@
+{
+  "idle_power_w_60s": 15.307864738805847,
+  "poll_calls_per_s": 71.7,
+  "sensor_value_change_interval_s_median": 0.5,
+  "sensor_value_change_interval_s_p90": 0.5160000000032596,
+  "repeats": 5,
+  "energy_J_mean": 9395.93627939952,
+  "energy_J_cv_pct": 1.9505004120623315,
+  "duration_s_cv_pct": 4.185023412595188,
+  "energy_J_minmax": [
+    9213.94316699984,
+    9702.519605999349
+  ],
+  "best_val_acc_range": [
+    67.9245283018868,
+    82.38993710691824
+  ],
+  "frozen_ecostop_stop_epochs": [
+    39,
+    39,
+    39,
+    39,
+    39
+  ],
+  "frozen_ecostop_energy_saved_pct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "corpus_energy_weighted_saved_raw_pct": 32.03291916832166,
+  "corpus_energy_weighted_saved_idle_subtracted_pct": 32.314852842002296,
+  "idle_share_of_total_energy_pct": 16.146732549905074
+}

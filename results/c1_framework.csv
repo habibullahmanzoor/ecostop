@@ -1,0 +1,22 @@
+rho,method,setting,C1_risk,C1_EW,within_target
+0.1,EcoStop framework,EcoStop @ 9,0.04065040650406504,20.416276080292832,True
+0.1,"LTT-HB, EcoStop",EcoStop @ 1,0.012195121951219513,10.504043682277612,True
+0.1,"betting only, EcoStop",EcoStop @ 1,0.012195121951219513,10.504043682277612,True
+0.1,"LTT-HB, calibrated patience",calibrated patience @ 3,0.08130081300813007,30.00805099487085,True
+0.1,"betting only, calibrated patience",calibrated patience @ 3,0.08130081300813007,30.00805099487085,True
+0.1,"LTT-HB, LC-PFN + gates",LC-PFN + gates @ 5,0.0,12.304371425868037,True
+0.1,"betting only, LC-PFN + gates",LC-PFN + gates @ 6,0.008130081300813007,16.21626212731851,True
+0.15,EcoStop framework,calibrated patience @ 5,0.09756097560975609,43.27340502787259,True
+0.15,"LTT-HB, EcoStop",EcoStop @ 4,0.024390243902439022,17.143960746783506,True
+0.15,"betting only, EcoStop",EcoStop @ 5,0.02845528455284553,18.01022637585606,True
+0.15,"LTT-HB, calibrated patience",calibrated patience @ 4,0.09349593495934959,36.533624454344945,True
+0.15,"betting only, calibrated patience",calibrated patience @ 5,0.09756097560975609,43.27340502787259,True
+0.15,"LTT-HB, LC-PFN + gates",LC-PFN + gates @ 7,0.008130081300813007,19.220563573399197,True
+0.15,"betting only, LC-PFN + gates",LC-PFN + gates @ 7,0.008130081300813007,19.220563573399197,True
+0.2,EcoStop framework,calibrated patience @ 6,0.20325203252032517,50.20346398190456,False
+0.2,"LTT-HB, EcoStop",EcoStop @ 10,0.044715447154471545,20.51069117480551,True
+0.2,"betting only, EcoStop",EcoStop @ 11,0.044715447154471545,20.57651397658255,True
+0.2,"LTT-HB, calibrated patience",calibrated patience @ 5,0.09756097560975609,43.27340502787259,True
+0.2,"betting only, calibrated patience",calibrated patience @ 5,0.09756097560975609,43.27340502787259,True
+0.2,"LTT-HB, LC-PFN + gates",LC-PFN + gates @ 10,0.05691056910569105,29.267507195518228,True
+0.2,"betting only, LC-PFN + gates",LC-PFN + gates @ 10,0.05691056910569105,29.267507195518228,True

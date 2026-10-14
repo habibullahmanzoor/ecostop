@@ -1,0 +1,20 @@
+[10/12/2026 09:26:45] launching echostop.c1_train
+[10/12/2026 11:54:33] session ended 11:27; relaunching supervisor detached (75/246 runs done, hashes verified)
+[10/12/2026 11:54:36] launching echostop.c1_train
+[10/12/2026 12:26:52] second kill at ~11:57 (Start-Process hidden stayed in session job). Relaunching via WMI Win32_Process.Create (77/246 done, hashes verified)
+[10/12/2026 12:26:52] launching echostop.c1_train
+[10/12/2026 12:31:26] diagnosis: two unclean machine reboots (11:23:43, ~12:08; Kernel-Power 41, no dump) killed training, not session end. WMI launch died at 12:27:01 (KeyboardInterrupt at import). Relaunching with Start-Process hidden; 77/246 done; hashes verified.
+[10/12/2026 12:31:26] launching echostop.c1_train
+[10/12/2026 13:53:46] third unclean power-off (last health sample 13:29:28; boot 13:47:56). 101/246 done, integrity check clean, hashes verified. Relaunching (Start-Process hidden).
+[10/12/2026 13:53:47] launching echostop.c1_train
+[10/12/2026 15:39:55] fourth unclean power-off (last health sample 15:06:16: GPU 87-89 C, 141-185 W, power-cap flag; user was running other heavy tasks). 143/246 done, integrity clean, hashes verified. Relaunching.
+[10/12/2026 15:39:56] launching echostop.c1_train
+[10/12/2026 16:27:04] stale log -> killing pid 17220
+[10/12/2026 16:27:10] launching echostop.c1_train
+[10/12/2026 16:50:10] stale log -> killing pid 16640
+[10/12/2026 16:50:15] launching echostop.c1_train
+[10/12/2026 16:52:52] DEVIATION: idle-GPU guard relaxed via echostop/c1_run.py wrapper (util>10 AND power>=25 W); c1_train.py untouched, hashes verified. Cause: desktop apps held util ~19% at ~6 W for 43 min (16:07-16:50) and the supervisor's 20-min stale-kill restarted the wait twice. Supervisor StaleMin 20 -> 75. 157/246 done.
+[10/12/2026 16:52:52] launching echostop.c1_run
+[10/13/2026 07:55:27] Modern Standby froze the machine (19:15->07:42 + 17:10, 18:39): 3 runs measurement-invalid (epoch > 5x median and > 60 s) quarantined to logs/c1/quarantine and re-run; 2 runs failed NVMLError_Unknown (re-run by retry loop). Trainer now holds a keep-awake request; supervisor retries until 246 runs. 185/246 valid.
+[10/13/2026 07:55:27] launching echostop.c1_run (pass 1, 185/246 done)
+[10/13/2026 09:39:33] C1 COMPLETE (246/246 runs)

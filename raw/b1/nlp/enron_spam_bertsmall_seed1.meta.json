@@ -1,0 +1,9 @@
+{
+  "dataset": "enron_spam",
+  "model": "google/bert_uncased_L-4_H-512_A-8",
+  "seed": 1,
+  "epochs": 15,
+  "bs": 32,
+  "lr": 5e-05,
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU"
+}

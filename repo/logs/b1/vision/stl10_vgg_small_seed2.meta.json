@@ -1,0 +1,12 @@
+{
+  "dataset": "stl10",
+  "arch": "vgg_small",
+  "seed": 2,
+  "opt": "sgd",
+  "lr": 0.05,
+  "wd": 0.0005,
+  "sched": "onecycle",
+  "epochs": 30,
+  "bs": 256,
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU"
+}

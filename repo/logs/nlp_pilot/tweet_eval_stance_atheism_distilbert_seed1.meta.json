@@ -1,0 +1,9 @@
+{
+  "dataset": "tweet_eval_stance_atheism",
+  "model": "distilbert",
+  "seed": 1,
+  "epochs": 10,
+  "batch_size": 32,
+  "lr": 2e-05,
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU"
+}

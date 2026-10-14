@@ -1,0 +1,2 @@
+[10/14/2026 08:07:26] launching slm_train (pass 1, 0/12 done)
+[10/14/2026 11:47:59] SLM S0 stopped by decision: gate (b) failed on completed short-text runs (13.4%) and is far worse on long text (eval energy > training chunk). 8/12 complete + 1 partial.

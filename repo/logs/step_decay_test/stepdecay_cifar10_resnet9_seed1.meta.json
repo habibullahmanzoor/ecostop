@@ -1,0 +1,13 @@
+{
+  "dataset": "cifar10",
+  "model": "resnet9",
+  "seed": 1,
+  "epochs": 40,
+  "schedule": "step_decay",
+  "milestones": [
+    15,
+    27
+  ],
+  "gamma": 0.1,
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU"
+}

@@ -1,0 +1,112 @@
+{
+  "frozen_utc": "2026-10-07T11:44:19.839588Z",
+  "eps": 0.5,
+  "calibration_jobs": 142,
+  "targets": {
+    "rho=0.15,beta=0.05": {
+      "EcoStop": {
+        "pooled": "g=0.14",
+        "per_domain": {
+          "vision": null,
+          "tabular": "g=0.1",
+          "nlp": "g=0.06"
+        }
+      },
+      "Patience (fixed p)": {
+        "pooled": "p=10",
+        "per_domain": {
+          "vision": "p=19",
+          "tabular": "p=13",
+          "nlp": "p=5"
+        }
+      },
+      "Patience (p=f*T)": {
+        "pooled": "f=0.25",
+        "per_domain": {
+          "vision": "f=0.5",
+          "tabular": "f=0.25",
+          "nlp": "f=0.5"
+        }
+      },
+      "Patience (p=f*T, min-delta 0.1)": {
+        "pooled": "f=0.25",
+        "per_domain": {
+          "vision": "f=0.5",
+          "tabular": "f=0.25",
+          "nlp": "f=0.5"
+        }
+      },
+      "Fixed budget fraction": {
+        "pooled": "f=0.8",
+        "per_domain": {
+          "vision": null,
+          "tabular": "f=0.5",
+          "nlp": "f=0.85"
+        }
+      },
+      "LC-PFN + EcoStop gates": {
+        "pooled": "g=0.2",
+        "per_domain": {
+          "vision": "g=0.003",
+          "tabular": "g=0.2",
+          "nlp": "g=0.15"
+        }
+      }
+    },
+    "rho=0.2,beta=0.05": {
+      "EcoStop": {
+        "pooled": "g=0.46",
+        "per_domain": {
+          "vision": null,
+          "tabular": "g=0.46",
+          "nlp": "g=0.3"
+        }
+      },
+      "Patience (fixed p)": {
+        "pooled": "p=8",
+        "per_domain": {
+          "vision": "p=15",
+          "tabular": "p=10",
+          "nlp": "p=4"
+        }
+      },
+      "Patience (p=f*T)": {
+        "pooled": "f=0.175",
+        "per_domain": {
+          "vision": "f=0.4",
+          "tabular": "f=0.175",
+          "nlp": "f=0.4"
+        }
+      },
+      "Patience (p=f*T, min-delta 0.1)": {
+        "pooled": "f=0.175",
+        "per_domain": {
+          "vision": "f=0.5",
+          "tabular": "f=0.175",
+          "nlp": "f=0.4"
+        }
+      },
+      "Fixed budget fraction": {
+        "pooled": "f=0.75",
+        "per_domain": {
+          "vision": null,
+          "tabular": "f=0.4",
+          "nlp": "f=0.75"
+        }
+      },
+      "LC-PFN + EcoStop gates": {
+        "pooled": "g=0.4",
+        "per_domain": {
+          "vision": "g=0.01",
+          "tabular": "g=0.5",
+          "nlp": "g=0.3"
+        }
+      }
+    }
+  },
+  "hashes": {
+    "echostop/b1_registry.py": "4759f4a9392e2e410a40eed7c2b555b281bd24a1412315a2b9e6aeb49c547c8f",
+    "echostop/methods.py": "3a05370d9d27c38689eb5140f41928a4e44f45af89e4e911ac0e069a16ca00d7",
+    "echostop/calibration.py": "3cef501d725e7a574e88a7026a9319f1b0fb8f9927ff7d53bd5bf569234459d1"
+  }
+}

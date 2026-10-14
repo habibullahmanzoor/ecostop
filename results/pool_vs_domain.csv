@@ -1,0 +1,121 @@
+rule,rho,n_per_domain,domain,method,EW,uncertified,exceed
+calibrated patience,0.15,8,vision,per-domain,0.0,1.0,0.0
+calibrated patience,0.15,8,vision,pooled,1.3868676123440185,0.2833333333333333,0.0
+calibrated patience,0.15,8,nlp,per-domain,0.0,1.0,0.0
+calibrated patience,0.15,8,nlp,pooled,13.189934347966615,0.2833333333333333,0.0
+calibrated patience,0.15,8,tabular,per-domain,0.0,1.0,0.0
+calibrated patience,0.15,8,tabular,pooled,21.3737918618516,0.2833333333333333,0.0
+calibrated patience,0.15,12,vision,per-domain,0.0,1.0,0.0
+calibrated patience,0.15,12,vision,pooled,5.065841273455512,0.0033333333333333335,0.0033333333333333335
+calibrated patience,0.15,12,nlp,per-domain,0.0,1.0,0.0
+calibrated patience,0.15,12,nlp,pooled,25.45932937918987,0.0033333333333333335,0.0
+calibrated patience,0.15,12,tabular,per-domain,0.0,1.0,0.0
+calibrated patience,0.15,12,tabular,pooled,36.37730695862338,0.0033333333333333335,0.0
+calibrated patience,0.15,16,vision,per-domain,0.0,1.0,0.0
+calibrated patience,0.15,16,vision,pooled,7.039629318870099,0.0,0.01
+calibrated patience,0.15,16,nlp,per-domain,0.0,1.0,0.0
+calibrated patience,0.15,16,nlp,pooled,30.02077130612425,0.0,0.0
+calibrated patience,0.15,16,tabular,per-domain,0.0,1.0,0.0
+calibrated patience,0.15,16,tabular,pooled,40.69425741312382,0.0,0.0
+calibrated patience,0.15,24,vision,per-domain,1.1923080839579177,0.0,0.0
+calibrated patience,0.15,24,vision,pooled,8.593753290141454,0.0,0.05
+calibrated patience,0.15,24,nlp,per-domain,8.793730194465251,0.4866666666666667,0.0
+calibrated patience,0.15,24,nlp,pooled,33.99070409683079,0.0,0.0
+calibrated patience,0.15,24,tabular,per-domain,18.7951304264309,0.41,0.0
+calibrated patience,0.15,24,tabular,pooled,44.03063901535514,0.0,0.0
+calibrated patience,0.15,28,vision,per-domain,2.689065529800363,0.0,0.0
+calibrated patience,0.15,28,vision,pooled,8.897855356705598,0.0,0.08333333333333333
+calibrated patience,0.15,28,nlp,per-domain,16.489009951227988,0.13,0.0
+calibrated patience,0.15,28,nlp,pooled,34.90021856638359,0.0,0.0
+calibrated patience,0.15,28,tabular,per-domain,31.98897723392586,0.07,0.0
+calibrated patience,0.15,28,tabular,pooled,45.162445625674664,0.0,0.0
+calibrated patience,0.2,8,vision,per-domain,0.0,1.0,0.0
+calibrated patience,0.2,8,vision,pooled,5.743406316505826,0.006666666666666667,0.013333333333333334
+calibrated patience,0.2,8,nlp,per-domain,0.0,1.0,0.0
+calibrated patience,0.2,8,nlp,pooled,26.638859472252705,0.006666666666666667,0.0
+calibrated patience,0.2,8,tabular,per-domain,0.0,1.0,0.0
+calibrated patience,0.2,8,tabular,pooled,37.383889446195404,0.006666666666666667,0.0
+calibrated patience,0.2,12,vision,per-domain,0.0,1.0,0.0
+calibrated patience,0.2,12,vision,pooled,9.355621043102971,0.0,0.023333333333333334
+calibrated patience,0.2,12,nlp,per-domain,0.0,1.0,0.0
+calibrated patience,0.2,12,nlp,pooled,34.13585586242022,0.0,0.0
+calibrated patience,0.2,12,tabular,per-domain,0.0,1.0,0.0
+calibrated patience,0.2,12,tabular,pooled,44.04379314018637,0.0,0.0
+calibrated patience,0.2,16,vision,per-domain,2.282551707894398,0.0,0.0
+calibrated patience,0.2,16,vision,pooled,10.819484198088238,0.0,0.06666666666666667
+calibrated patience,0.2,16,nlp,per-domain,12.618185928007533,0.3566666666666667,0.0
+calibrated patience,0.2,16,nlp,pooled,36.94455218728713,0.0,0.0
+calibrated patience,0.2,16,tabular,per-domain,23.410454897462767,0.3233333333333333,0.0
+calibrated patience,0.2,16,tabular,pooled,46.52916457549753,0.0,0.0
+calibrated patience,0.2,24,vision,per-domain,5.7639416132551204,0.0,0.0033333333333333335
+calibrated patience,0.2,24,vision,pooled,14.111348524399808,0.0,0.09333333333333334
+calibrated patience,0.2,24,nlp,per-domain,24.985761334679562,0.006666666666666667,0.0
+calibrated patience,0.2,24,nlp,pooled,41.53240211336669,0.0,0.0
+calibrated patience,0.2,24,tabular,per-domain,43.90203857592385,0.0,0.0
+calibrated patience,0.2,24,tabular,pooled,49.996497125022024,0.0,0.0
+calibrated patience,0.2,28,vision,per-domain,7.309281810472145,0.0,0.01
+calibrated patience,0.2,28,vision,pooled,15.919707662507708,0.0,0.18333333333333332
+calibrated patience,0.2,28,nlp,per-domain,26.205499544524866,0.0,0.0
+calibrated patience,0.2,28,nlp,pooled,42.73952055059517,0.0,0.0
+calibrated patience,0.2,28,tabular,per-domain,45.70943859676076,0.0,0.0
+calibrated patience,0.2,28,tabular,pooled,51.522238376554576,0.0,0.0
+EcoStop,0.15,8,vision,per-domain,0.0,1.0,0.0
+EcoStop,0.15,8,vision,pooled,1.1057282521289022,0.9266666666666666,0.0033333333333333335
+EcoStop,0.15,8,nlp,per-domain,0.0,1.0,0.0
+EcoStop,0.15,8,nlp,pooled,1.4198004297311042,0.9266666666666666,0.0
+EcoStop,0.15,8,tabular,per-domain,0.0,1.0,0.0
+EcoStop,0.15,8,tabular,pooled,4.313275671349646,0.9266666666666666,0.0
+EcoStop,0.15,12,vision,per-domain,0.0,1.0,0.0
+EcoStop,0.15,12,vision,pooled,10.209038608401872,0.37,0.043333333333333335
+EcoStop,0.15,12,nlp,per-domain,0.0,1.0,0.0
+EcoStop,0.15,12,nlp,pooled,12.51219296844178,0.37,0.0
+EcoStop,0.15,12,tabular,per-domain,0.0,1.0,0.0
+EcoStop,0.15,12,tabular,pooled,37.49923714268584,0.37,0.0
+EcoStop,0.15,16,vision,per-domain,0.0,1.0,0.0
+EcoStop,0.15,16,vision,pooled,15.285296514250895,0.043333333333333335,0.07333333333333333
+EcoStop,0.15,16,nlp,per-domain,0.0,1.0,0.0
+EcoStop,0.15,16,nlp,pooled,19.40604743979827,0.043333333333333335,0.0
+EcoStop,0.15,16,tabular,per-domain,0.0,1.0,0.0
+EcoStop,0.15,16,tabular,pooled,57.53288103053162,0.043333333333333335,0.0
+EcoStop,0.15,24,vision,per-domain,0.24530431939424427,0.9833333333333333,0.0
+EcoStop,0.15,24,vision,pooled,17.186975089080192,0.0,0.15
+EcoStop,0.15,24,nlp,per-domain,12.707624466030119,0.4666666666666667,0.0
+EcoStop,0.15,24,nlp,pooled,22.01758187441599,0.0,0.0
+EcoStop,0.15,24,tabular,per-domain,1.5778241409292375,0.9733333333333334,0.0
+EcoStop,0.15,24,tabular,pooled,60.448779376978806,0.0,0.0
+EcoStop,0.15,28,vision,per-domain,0.9692441808734661,0.9366666666666666,0.0
+EcoStop,0.15,28,vision,pooled,19.587447375749647,0.0,0.21333333333333335
+EcoStop,0.15,28,nlp,per-domain,21.711316927152378,0.14333333333333334,0.0
+EcoStop,0.15,28,nlp,pooled,22.379736769970304,0.0,0.0
+EcoStop,0.15,28,tabular,per-domain,4.219259667732755,0.9266666666666666,0.0
+EcoStop,0.15,28,tabular,pooled,61.05818416422198,0.0,0.0
+EcoStop,0.2,8,vision,per-domain,0.0,1.0,0.0
+EcoStop,0.2,8,vision,pooled,11.881815741276311,0.27666666666666667,0.04
+EcoStop,0.2,8,nlp,per-domain,0.0,1.0,0.0
+EcoStop,0.2,8,nlp,pooled,14.761807201127146,0.27666666666666667,0.0
+EcoStop,0.2,8,tabular,per-domain,0.0,1.0,0.0
+EcoStop,0.2,8,tabular,pooled,43.39041341170532,0.27666666666666667,0.0
+EcoStop,0.2,12,vision,per-domain,0.0,1.0,0.0
+EcoStop,0.2,12,vision,pooled,18.192335732949285,0.01,0.10333333333333333
+EcoStop,0.2,12,nlp,per-domain,0.0,1.0,0.0
+EcoStop,0.2,12,nlp,pooled,21.985387092925205,0.01,0.0
+EcoStop,0.2,12,tabular,per-domain,0.0,1.0,0.0
+EcoStop,0.2,12,tabular,pooled,60.06002354004824,0.01,0.0
+EcoStop,0.2,16,vision,per-domain,1.362544619595748,0.91,0.0
+EcoStop,0.2,16,vision,pooled,19.679108937978132,0.0,0.16
+EcoStop,0.2,16,nlp,per-domain,15.806365669711592,0.38,0.0
+EcoStop,0.2,16,nlp,pooled,23.888534797899105,0.0,0.0
+EcoStop,0.2,16,tabular,per-domain,6.216876410482812,0.8966666666666666,0.0
+EcoStop,0.2,16,tabular,pooled,61.311885372384424,0.0,0.0
+EcoStop,0.2,24,vision,per-domain,7.872103480383004,0.49,0.0
+EcoStop,0.2,24,vision,pooled,23.933446707434413,0.0,0.4033333333333333
+EcoStop,0.2,24,nlp,per-domain,27.826682497511012,0.01,0.0
+EcoStop,0.2,24,nlp,pooled,26.9067657199583,0.0,0.0
+EcoStop,0.2,24,tabular,per-domain,37.56273630875845,0.37333333333333335,0.0
+EcoStop,0.2,24,tabular,pooled,62.412858157757434,0.0,0.0
+EcoStop,0.2,28,vision,per-domain,11.068591916634903,0.23666666666666666,0.0
+EcoStop,0.2,28,vision,pooled,24.969771729356836,0.0,0.4666666666666667
+EcoStop,0.2,28,nlp,per-domain,29.553741318750095,0.0,0.0
+EcoStop,0.2,28,nlp,pooled,27.89870837893448,0.0,0.0
+EcoStop,0.2,28,tabular,per-domain,43.56030546613092,0.27,0.0
+EcoStop,0.2,28,tabular,pooled,62.871437692145385,0.0,0.0

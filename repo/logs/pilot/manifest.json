@@ -1,0 +1,94 @@
+{
+  "epochs": 40,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "matrix": [
+    [
+      "fashion_mnist",
+      "resnet9"
+    ],
+    [
+      "fashion_mnist",
+      "resnet18"
+    ],
+    [
+      "cifar10",
+      "resnet9"
+    ],
+    [
+      "cifar10",
+      "resnet18"
+    ]
+  ],
+  "runs": [
+    {
+      "dataset": "fashion_mnist",
+      "model": "resnet9",
+      "seed": 0,
+      "log": "logs\\pilot\\fashion_mnist_resnet9_seed0.csv"
+    },
+    {
+      "dataset": "fashion_mnist",
+      "model": "resnet9",
+      "seed": 1,
+      "log": "logs\\pilot\\fashion_mnist_resnet9_seed1.csv"
+    },
+    {
+      "dataset": "fashion_mnist",
+      "model": "resnet9",
+      "seed": 2,
+      "log": "logs\\pilot\\fashion_mnist_resnet9_seed2.csv"
+    },
+    {
+      "dataset": "fashion_mnist",
+      "model": "resnet18",
+      "seed": 0,
+      "log": "logs\\pilot\\fashion_mnist_resnet18_seed0.csv"
+    },
+    {
+      "dataset": "fashion_mnist",
+      "model": "resnet18",
+      "seed": 1,
+      "log": "logs\\pilot\\fashion_mnist_resnet18_seed1.csv"
+    },
+    {
+      "dataset": "fashion_mnist",
+      "model": "resnet18",
+      "seed": 2,
+      "log": "logs\\pilot\\fashion_mnist_resnet18_seed2.csv"
+    },
+    {
+      "dataset": "cifar10",
+      "model": "resnet9",
+      "seed": 0,
+      "log": "logs\\pilot\\cifar10_resnet9_seed0.csv"
+    },
+    {
+      "dataset": "cifar10",
+      "model": "resnet9",
+      "seed": 1,
+      "log": "logs\\pilot\\cifar10_resnet9_seed1.csv"
+    },
+    {
+      "dataset": "cifar10",
+      "model": "resnet9",
+      "seed": 2,
+      "log": "logs\\pilot\\cifar10_resnet9_seed2.csv"
+    },
+    {
+      "dataset": "cifar10",
+      "model": "resnet18",
+      "seed": 0,
+      "log": "logs\\pilot\\cifar10_resnet18_seed0.csv"
+    },
+    {
+      "dataset": "cifar10",
+      "model": "resnet18",
+      "seed": 1,
+      "log": "logs\\pilot\\cifar10_resnet18_seed1.csv"
+    }
+  ]
+}

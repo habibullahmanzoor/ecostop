@@ -1,0 +1,6 @@
+{
+  "idle_power_w_60s": 15.307864738805847,
+  "poll_calls_per_s": 71.7,
+  "sensor_value_change_interval_s_median": 0.5,
+  "sensor_value_change_interval_s_p90": 0.5160000000032596
+}

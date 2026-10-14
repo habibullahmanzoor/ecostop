@@ -1,0 +1,9 @@
+# torch/torchvision installed separately with CUDA index (see setup notes)
+nvidia-ml-py>=12.560  # provides the `pynvml` import; do NOT install the deprecated `pynvml` PyPI package
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.8
+scikit-learn>=1.4
+tqdm>=4.66
+datasets>=2.19
+transformers>=4.40

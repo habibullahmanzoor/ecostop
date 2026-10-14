@@ -1,0 +1,15 @@
+rho,method,exceed_rate
+0.15,EcoStop framework,0.016
+0.15,"LTT-HB, EcoStop",0.014
+0.15,"betting only, EcoStop",0.085
+0.15,"LTT-HB, calibrated patience",0.0
+0.15,"betting only, calibrated patience",0.001
+0.15,"LTT-HB, LC-PFN + gates",0.011
+0.15,"betting only, LC-PFN + gates",0.07
+0.2,EcoStop framework,0.012
+0.2,"LTT-HB, EcoStop",0.002
+0.2,"betting only, EcoStop",0.002
+0.2,"LTT-HB, calibrated patience",0.0
+0.2,"betting only, calibrated patience",0.048
+0.2,"LTT-HB, LC-PFN + gates",0.002
+0.2,"betting only, LC-PFN + gates",0.002

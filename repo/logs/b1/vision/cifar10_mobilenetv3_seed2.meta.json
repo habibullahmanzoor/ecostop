@@ -1,0 +1,13 @@
+{
+  "dataset": "cifar10",
+  "arch": "mobilenetv3",
+  "seed": 2,
+  "opt": "adamw",
+  "lr": 0.002,
+  "wd": 0.05,
+  "sched": "cosine_warmup",
+  "warmup": 3,
+  "epochs": 50,
+  "bs": 256,
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU"
+}

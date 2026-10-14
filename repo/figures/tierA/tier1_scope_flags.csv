@@ -1,0 +1,36 @@
+job,family,domain,T,max_drop,warm,in_scope,reason
+b1:cifar10_mobilenetv3,cosine_warmup,vision,50,0.26,0.04,True,
+b1:cifar10_vit_tiny,cosine_warmup,vision,50,0.26,0.08,True,
+b1:dtd_mobilenetv3,cosine_warmup,vision,50,0.26,0.04,True,
+b1:dtd_resnet18_step,step,vision,40,0.9,0.0,False,sudden LR drop
+b1:fashion_mnist_mobilenetv3,cosine_warmup,vision,50,0.26,0.04,True,
+b1:fashion_mnist_resnet18_step,step,vision,40,0.9,0.0,False,sudden LR drop
+b1:fashion_mnist_vit_tiny,cosine_warmup,vision,50,0.26,0.08,True,
+b1:flowers102_mobilenetv3,cosine_warmup,vision,50,0.26,0.04,True,
+b1:gtsrb_mobilenetv3,cosine_warmup,vision,50,0.26,0.04,True,
+b1:kmnist_vit_tiny,cosine_warmup,vision,50,0.26,0.08,True,
+b1:mnist_vgg_small,onecycle,vision,30,0.39,0.3,False,warm-up fraction
+b1:oxford_pet_resnet18_step,step,vision,40,0.9,0.0,False,sudden LR drop
+b1:oxford_pet_vit_tiny,cosine_warmup,vision,50,0.26,0.08,True,
+b1:rendered_sst2_vgg_small,onecycle,vision,30,0.39,0.3,False,warm-up fraction
+b1:semeion_resnet18_step,step,vision,40,0.9,0.0,False,sudden LR drop
+b1:stl10_vgg_small,onecycle,vision,30,0.39,0.3,False,warm-up fraction
+b1:bbc_news_bertsmall,nlp_linear,nlp,15,0.29,0.07,True,
+b1:boolq_bertsmall,nlp_linear,nlp,15,0.29,0.07,True,
+b1:cr_bertsmall,nlp_linear,nlp,15,0.29,0.07,True,
+b1:enron_spam_bertsmall,nlp_linear,nlp,15,0.29,0.07,True,
+b1:hate_offensive_bertsmall,nlp_linear,nlp,15,0.29,0.07,True,
+b1:sst5_bertsmall,nlp_linear,nlp,15,0.29,0.07,True,
+b1:student_questions_bertsmall,nlp_linear,nlp,15,0.29,0.07,True,
+b1:subj_bertsmall,nlp_linear,nlp,15,0.29,0.07,True,
+b1:tabular_MagicTelescope,tab_cosine,tabular,100,0.16,0.0,True,
+b1:tabular_artificial-characters,tab_cosine,tabular,100,0.16,0.0,True,
+b1:tabular_churn,tab_cosine,tabular,100,0.16,0.0,True,
+b1:tabular_collins,tab_cosine,tabular,100,0.16,0.0,True,
+b1:tabular_dna,tab_cosine,tabular,100,0.16,0.0,True,
+b1:tabular_gas-drift,tab_cosine,tabular,100,0.16,0.0,True,
+b1:tabular_hill-valley,tab_cosine,tabular,100,0.16,0.0,True,
+b1:tabular_madelon,tab_cosine,tabular,100,0.16,0.0,True,
+b1:tabular_nomao,tab_cosine,tabular,100,0.16,0.0,True,
+b1:tabular_pc4,tab_cosine,tabular,100,0.16,0.0,True,
+b1:tabular_pendigits,tab_cosine,tabular,100,0.16,0.0,True,

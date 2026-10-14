@@ -1,0 +1,88 @@
+{
+ "frozen_utc": "2026-10-12T08:26:26.875499Z",
+ "calibration_jobs": 177,
+ "nlp_calibration_jobs": 35,
+ "frozen": {
+  "HB pooled rho=0.15": {
+   "EcoStop-SR": "g=0.14",
+   "EcoStop (paper gates)": "g=0.18",
+   "LC-PFN + SR gates": "g=0.2",
+   "Patience p=fT, min-delta 0.1": "f=0.25",
+   "Patience p=fT": "f=0.25",
+   "Patience fixed p": "p=10",
+   "Fixed budget fraction": "f=0.85"
+  },
+  "betting pooled rho=0.15": {
+   "EcoStop-SR": "g=0.18",
+   "EcoStop (paper gates)": "g=0.22",
+   "LC-PFN + SR gates": "g=0.2",
+   "Patience p=fT, min-delta 0.1": "f=0.2",
+   "Patience p=fT": "f=0.2",
+   "Patience fixed p": "p=9",
+   "Fixed budget fraction": "f=0.8"
+  },
+  "HB pooled rho=0.2": {
+   "EcoStop-SR": "g=0.34",
+   "EcoStop (paper gates)": "g=0.42",
+   "LC-PFN + SR gates": "g=0.3",
+   "Patience p=fT, min-delta 0.1": "f=0.2",
+   "Patience p=fT": "f=0.175",
+   "Patience fixed p": "p=8",
+   "Fixed budget fraction": "f=0.8"
+  },
+  "betting pooled rho=0.2": {
+   "EcoStop-SR": "g=0.38",
+   "EcoStop (paper gates)": "g=0.46",
+   "LC-PFN + SR gates": "g=0.3",
+   "Patience p=fT, min-delta 0.1": "f=0.2",
+   "Patience p=fT": "f=0.175",
+   "Patience fixed p": "p=8",
+   "Fixed budget fraction": "f=0.75"
+  },
+  "empirical NLP risk<=0.1": {
+   "EcoStop-SR": "g=0.3",
+   "EcoStop (paper gates)": "g=0.98",
+   "LC-PFN + SR gates": "g=0.3",
+   "Patience p=fT, min-delta 0.1": "f=0.3",
+   "Patience p=fT": "f=0.3",
+   "Patience fixed p": "p=3",
+   "Fixed budget fraction": "f=0.65"
+  },
+  "empirical NLP risk<=0.15": {
+   "EcoStop-SR": "g=0.46",
+   "EcoStop (paper gates)": "g=0.98",
+   "LC-PFN + SR gates": "g=0.4",
+   "Patience p=fT, min-delta 0.1": "f=0.15",
+   "Patience p=fT": "f=0.15",
+   "Patience fixed p": "p=2",
+   "Fixed budget fraction": "f=0.65"
+  }
+ },
+ "python": "3.10.11",
+ "versions": {
+  "torch": "2.9.1+cu128",
+  "transformers": "4.57.6"
+ },
+ "hashes": {
+  "echostop/c1_registry.py": "a5ca55b88a1003de1073b9097cb6e78a1265e962389c28278b9a8b431d3650d1",
+  "echostop/c1_data.py": "3c7fe0faf9d8be274a9c43c9dd868f4335e8bd74f7abe02998c4d0c527fd1e88",
+  "echostop/c1_train.py": "5bad49f67638dac3d807345938ccae4b60f08705a76419d89256f0eb6464dd76",
+  "echostop/c1_rules.py": "91b00dbff3c7aa30429d0c16a07c08f67c38bb91a08109ad30f81b150ae2f09c",
+  "echostop/c1_eval.py": "a88f5e3475c5ee3d30a33848d95e1d13a5939acc024ec5555e37180733d89513",
+  "echostop/c1_freeze.py": "3d797db20d8b2e3aec83439bb0277b75509b8dadbbe0775b05709d696e0f2318",
+  "c1_manifest.json": "9c781c5cb9a82a54e4a3281e8ce65ef8a1326050d428f97b2f7067459d5d41d5",
+  "c1_analysis_plan.md": "5392433045aaa5532dc718e0f9bf9bada3183aa6ba000278ff1fe90a771ec35f",
+  "echostop/methods.py": "3a05370d9d27c38689eb5140f41928a4e44f45af89e4e911ac0e069a16ca00d7",
+  "echostop/calibration.py": "3cef501d725e7a574e88a7026a9319f1b0fb8f9927ff7d53bd5bf569234459d1",
+  "echostop/ablation.py": "825bcc6b01455984c9e2677f15ef22a57489378e6270848ab0e258b504e9215b",
+  "echostop/tierA.py": "184f3e200027153133e75ea7719623d98e3a26987e990738192d58bd7df9323a",
+  "echostop/fv2_srgates.py": "fcfd2748118ffb31197152c23616f85ebac863edd69ce3a184fd35a27fa59082",
+  "echostop/lcpfn_real.py": "15f4fd426aca8d54df5438011320cd37430e16e0c4cf16adf04ee3cfc680f1f1",
+  "echostop/framework_v2.py": "9bde9ac24c1e32720af7b2f1274f6b89b54b9e02b310efb3b5d71b4eb302c4f0",
+  "echostop/b1_eval.py": "5f24754170d5d0b5402f9c11fbc22fdb9251a38dea8870f33984332a366de849",
+  "echostop/b1_train.py": "a753e60df8b19b35b04c08ce04963ced0ca2513b337be3ef3b5be85154f7a9d2",
+  "echostop/train_nlp.py": "e48ca0950668feea7d712a7f866cfb9ccf378f11c9e8936f17c623ebb664666c",
+  "echostop/train.py": "50a95801a6a92bc8dcd8fa6d3587236303372f357cc4c857f271fdd6c094318e",
+  "echostop/energy.py": "15ec97e1a950f05845ff645f26d93f85fa0fe6503bb5f04c7cae79bc2e7a6e11"
+ }
+}

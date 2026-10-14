@@ -1,0 +1,1 @@
+{"non_learning_jobs":["dtd_mobilenetv3","flowers102_mobilenetv3"],"oracle_violation_all_vision":0.2916666667,"oracle_violation_by_family":{"cosine + warm-up":0.2962962963,"one-cycle":0.2222222222,"step decay":0.3333333333}}

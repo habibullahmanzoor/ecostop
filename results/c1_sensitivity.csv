@@ -1,0 +1,4 @@
+variant,delta,lo,hi
+exclude jobs that barely learn (final acc - majority < 3 pp): 14 jobs removed,8.31064907800587,-9.80087280327186,16.161786643258
+EcoStop-SR gamma grid thinned to every other value,-11.173886552736406,-14.890187231165902,11.527040031989147
+"leave one dataset out: min -10.21 (multiclass_sent), max -8.41 (medical_abs)",-9.472927259584585,-10.207261315429712,-8.407901869328477

@@ -1,0 +1,12 @@
+{
+  "dataset": "fashion_mnist",
+  "arch": "resnet18_step",
+  "seed": 0,
+  "opt": "sgd",
+  "lr": 0.1,
+  "wd": 0.0005,
+  "sched": "step",
+  "epochs": 40,
+  "bs": 256,
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU"
+}

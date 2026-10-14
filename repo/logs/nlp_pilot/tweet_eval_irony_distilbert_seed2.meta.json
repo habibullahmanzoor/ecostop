@@ -1,0 +1,9 @@
+{
+  "dataset": "tweet_eval_irony",
+  "model": "distilbert",
+  "seed": 2,
+  "epochs": 10,
+  "batch_size": 32,
+  "lr": 2e-05,
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU"
+}

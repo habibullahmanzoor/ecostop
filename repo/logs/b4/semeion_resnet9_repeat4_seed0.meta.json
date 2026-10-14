@@ -1,0 +1,8 @@
+{
+  "dataset": "semeion",
+  "arch": "resnet9",
+  "regime": "_repeat4",
+  "freeze_epochs": 0,
+  "seed": 0,
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU"
+}
