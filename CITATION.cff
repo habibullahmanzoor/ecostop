@@ -12,7 +12,7 @@ authors:
   - family-names: Ramzan
     given-names: Naeem
 date-released: "2026-10-14"
-doi: "[DOI to be assigned on deposit]"
+version: "v1.0"
 repository-code: "https://github.com/habibullahmanzoor/ecostop"
 url: "https://github.com/habibullahmanzoor/ecostop"
 license: MIT

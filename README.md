@@ -2,7 +2,7 @@
 
 Companion artefact of the paper *EcoStop: Certified Early Stopping for Energy-Efficient Training*.
 
-> Repository: https://github.com/habibullahmanzoor/ecostop. Licence: MIT (see `LICENSE`). A versioned archive with a DOI will be deposited on Zenodo (`[DOI]`).
+> Repository: https://github.com/habibullahmanzoor/ecostop. Licence: MIT (see `LICENSE`). The version used in the paper is tagged `v1.0`.
 
 ## About
 
@@ -68,4 +68,4 @@ The training scripts (`echostop/b1_train.py`, `c1_train.py`, `slm_train.py`) req
 
 ## Citation
 
-See `CITATION.cff`. URL: https://github.com/habibullahmanzoor/ecostop. DOI: `[DOI]`.
+See `CITATION.cff`. URL: https://github.com/habibullahmanzoor/ecostop. Version: tag `v1.0`.
