@@ -4,6 +4,25 @@ Companion artefact of the paper *EcoStop: Certified Early Stopping for Energy-Ef
 
 > Repository: https://github.com/habibullahmanzoor/ecostop. Licence: MIT (see `LICENSE`). A versioned archive with a DOI will be deposited on Zenodo (`[DOI]`).
 
+## About
+
+**EcoStop** is a framework and benchmark for *certified early stopping*: stopping a training run as soon as it is safe to,
+so that energy is saved while a statistical guarantee bounds how often final accuracy is lost.
+
+* **Problem.** Early stopping is the cheapest lever for cutting training energy, but stopping rules are usually compared at
+  hand-picked settings that hide the accuracy they risk.
+* **Method.** Stopping rules (learning-curve score, calibrated patience, LC-PFN) are replayed on measured training runs and
+  certified with Learn-then-Test fixed-sequence testing and betting p-values, with Bonferroni-corrected rule selection and a
+  scope card that abstains outside the calibration support.
+* **Data.** EcoStop-Bench: 923 GPU-metered (NVML) training runs, 271 jobs, 37,090 epoch rows across vision, tabular and NLP
+  fine-tuning, including a pre-registered confirmatory study on 41 new datasets.
+* **Findings.** Certification beats standard certification at the same guarantee, but calibrated patience is as good as the
+  learning-curve rule once risk is matched; the paper reports ties and negatives alongside the wins.
+
+**Paper:** *EcoStop: Certified Early Stopping for Energy-Efficient Training* (Althobaiti, Manzoor, Manzoor, Ramzan).
+**Code and data availability:** everything needed to recompute every number in the paper is in this repository.
+**Licence:** MIT.
+
 ## Contents
 
 | Folder | What it holds |
