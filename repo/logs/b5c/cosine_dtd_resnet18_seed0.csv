@@ -1,0 +1,2 @@
+epoch,train_loss,val_acc,is_new_best,test_acc_at_checkpoint,energy_joules,duration_seconds,mean_power_watts,cumulative_energy_joules,cumulative_duration_seconds,lr
+0,4.2610871110643656,3.24468085106383,1,3.0851063829787235,7336.777377503623,99.15600000007544,73.99226852130019,7336.777377503623,99.15600000007544,0.1

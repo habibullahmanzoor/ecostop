@@ -1,0 +1,82 @@
+{
+  "study": "B5 schedule-confound",
+  "question": "With architecture, dataset, optimiser, epochs and batch size held fixed, does the learning-rate schedule family alone reproduce the risk split seen in B1, where the discontinuous families were also different architectures?",
+  "fixed": {
+    "dataset": "cifar10",
+    "model": "resnet18",
+    "epochs": 40,
+    "batch_size": 256,
+    "lr": 0.1,
+    "weight_decay": 0.0005,
+    "optimizer": "SGD nesterov momentum 0.9",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "val_split": "echostop.data.get_dataset (corpus construction)"
+  },
+  "arms": {
+    "cosine": {
+      "scheduler": "CosineAnnealingLR",
+      "T_max": 40,
+      "scheduled_events": []
+    },
+    "step": {
+      "scheduler": "MultiStepLR",
+      "milestones": [
+        20,
+        30
+      ],
+      "gamma": 0.1,
+      "scheduled_events": [
+        20,
+        30
+      ]
+    },
+    "onecycle": {
+      "scheduler": "OneCycleLR",
+      "max_lr": 0.1,
+      "total_steps": 40,
+      "pct_start": 0.3,
+      "div_factor": 10.0,
+      "final_div_factor": 100.0,
+      "scheduled_events": [
+        12
+      ]
+    }
+  },
+  "evaluation": {
+    "tolerance_eps_pp": 0.5,
+    "gamma_frozen": {
+      "rho_0.15": 0.14,
+      "rho_0.20": 0.46
+    },
+    "gamma_source": "certified on the 142-job development corpus (paper, RQ1)",
+    "patience_k": 2,
+    "plateau_gate": "schedule_relative_safeguard(40) = 5",
+    "gate": {
+      "definition": "do not stop at epoch t when a scheduled event t_d satisfies t_d - h <= t <= t_d",
+      "h_epochs": 2,
+      "h_source": "fixed a priori, not tuned on B5"
+    },
+    "primary_endpoint": "per-schedule violation rate at gamma=0.46 (rho=0.20)",
+    "secondary": [
+      "violation rate at gamma=0.14",
+      "energy-weighted saving per schedule",
+      "gate on/off at gamma=0.46"
+    ]
+  },
+  "predictions_fixed_before_the_run": {
+    "P1": "with the confound removed, the schedule still separates risk: cosine inside rho, step and one-cycle above it",
+    "P2": "the gate reduces step and one-cycle risk without changing cosine, because cosine declares no event",
+    "falsification": "if all three schedules land within rho, the B1 split was an architecture effect and the paper's central claim fails"
+  },
+  "hashes": {
+    "echostop/b5_confound.py": "3F4664AF488836A6BAE71BF477DDAC45897E10FAF7655866C0D77376425387AF",
+    "echostop/calibration.py": "3CEF501D725E7A574E88A7026A9319F1B0FB8F9927FF7D53BD5BF569234459D1",
+    "echostop/methods.py": "3A05370D9D27C38689EB5140F41928A4E44F45AF89E4E911AC0E069A16CA00D7",
+    "echostop/energy.py": "15EC97E1A950F05845FF645F26D93F85FA0FE6503BB5F04C7CAE79BC2E7A6E11"
+  },
+  "frozen_utc": "2026-10-27T11:43:41Z"
+}

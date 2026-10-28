@@ -39,26 +39,32 @@ so that energy is saved while a statistical guarantee bounds how often final acc
 | `code/` | All analysis code (`echostop/*.py`), `requirements.txt`, `matplotlibrc`. |
 | `results/` | Every result table as CSV/JSON that the paper's numbers and figures are computed from. |
 | `figures/` | The paper's figure PDFs (fonts embedded). |
-| `paper/` | LaTeX source and bibliography of the **earlier submitted version**; see `paper/README.md` for its status. |
+| `paper/` | Status of the manuscript. The manuscript source is **not published here**; see `paper/README.md`. |
 | `repo/` | A repository-layout copy (code, raw logs, small trace caches, frozen protocols) so that the analysis scripts run unchanged: `cd repo` and run the commands below. |
 | `SHA256SUMS.txt` | SHA-256 of every file in this release. |
 
-## Reproducing the headline results (CPU only, a few minutes each)
+## Reproducing the results (CPU only, a few minutes each)
 
-Run from `repo/` (it holds the logs and caches the scripts read):
+Run from `repo/` (it holds the logs, result caches and protocols the scripts read):
 
 ```
 cd repo
 export USE_TF=0 CUDA_VISIBLE_DEVICES=""
 pip install -r requirements.txt
-python -m echostop.c1_framework_oof      # pooled out-of-fold framework comparison, validity coverage
-python -m echostop.subgroup_wins         # regimes
-python -m echostop.pool_vs_domain        # pooled versus per-domain certification
-python -m echostop.break_even            # cost of failure
-python -m echostop.crc_extension         # calibrator comparison
-python -m echostop.c1_eval --no-pfn      # pre-registered C1 evaluation (refuses to run if a locked file changed)
-python -m echostop.c1_crossfit           # cross-fitted C1 estimate (post hoc)
+python -m echostop.family_cert      # Q4: pooled vs per-domain vs per-family certification
+python -m echostop.gate_families    # Q5: the declared-drop gate on the three fresh families
+python -m echostop.gate_schedule    # Q5: the frozen two-epoch window that leaves the failure intact
+python -m echostop.shift_cert       # Q3: reweighting to a declared mix, and the family breakdown
+python -m echostop.where_we_win     # the per-stratum comparison behind the instability paragraph
+python -m echostop.pool_vs_domain   # pooled versus per-domain certification
+python -m echostop.break_even       # Q8: cost of failure
+python -m echostop.crc_extension    # Q8: calibrator comparison
+python -m echostop.c1_eval --no-pfn # Q9: pre-registered C1 evaluation (refuses to run if a locked file changed)
+python -m echostop.c1_crossfit      # Q9: cross-fitted C1 estimate (post hoc)
 ```
+
+`echostop/subgroup_wins` and `echostop/c1_framework_oof` remain in `code/` because they produce analyses
+that appeared in an earlier version of the manuscript; the current paper does not report them.
 
 The benchmark can be used on its own: `from ecostop_bench.bench import load, evaluate` (see `ecostop_bench/README.md`).
 The training scripts (`echostop/b1_train.py`, `c1_train.py`, `slm_train.py`) require a CUDA GPU and the NVML energy meter
@@ -79,3 +85,5 @@ See `CITATION.cff`. URL: https://github.com/habibullahmanzoor/ecostop. Version: 
   longer supported and have been removed: that the framework beats standard certification at the same
   guarantee, and a job count that could not be derived from the released sets. The benchmark data,
   the protocols and the code are unchanged.
+* The analyses behind Q3 to Q5 were added with this revision, together with the pooled matrices
+  (`repo/cache/pool_mats.pkl`) they read and the B5/B5c protocol freezes in `protocols/`.

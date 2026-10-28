@@ -1,0 +1,12 @@
+{
+  "schedule": "step",
+  "dataset": "cifar10",
+  "model": "resnet18",
+  "seed": 0,
+  "epochs": 40,
+  "batch_size": 256,
+  "lr": 0.1,
+  "weight_decay": 0.0005,
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "finished_utc": "2026-10-27T13:38:36Z"
+}

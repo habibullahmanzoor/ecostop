@@ -1,0 +1,46 @@
+{
+  "study": "B5c matched cosine counterparts of the B1 step-decay arm",
+  "question": "In the fresh test the discontinuous schedule families also used different architectures. Holding dataset, architecture, optimiser, learning rate, weight decay, batch size and horizon fixed, do the cosine counterparts of the four B1 step-decay jobs carry lower risk at the same frozen threshold?",
+  "matched_fields_source": "logs/b1/vision/<dataset>_resnet18_step_seed0.meta.json",
+  "arm": {
+    "model": "resnet18",
+    "schedule": "cosine (CosineAnnealingLR, T_max=epochs)",
+    "opt": "sgd nesterov momentum 0.9",
+    "lr": 0.1,
+    "weight_decay": 0.0005,
+    "epochs": 40,
+    "batch_size": 256
+  },
+  "datasets": [
+    "dtd",
+    "oxford_pet",
+    "semeion"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "fourth_pair": "fashion_mnist: dev:fashion_mnist_resnet18 (cosine, same loader and seed) against b1:fashion_mnist_resnet18_step; included as a fourth matched pair drawn from the development corpus, labelled as such",
+  "evaluation": {
+    "tolerance_eps_pp": 0.5,
+    "gammas": {
+      "rho_0.15": 0.14,
+      "rho_0.20": 0.46
+    },
+    "patience_k": 2,
+    "plateau_gate": "schedule_relative_safeguard(40) = 5",
+    "gate": "declared-drop gate of the paper; inert on cosine by construction"
+  },
+  "predictions_fixed_before_the_run": {
+    "P1": "cosine counterparts realise lower risk than their step-decay partners at the same threshold",
+    "P2": "the gate is inert on all of them, since cosine declares no drop",
+    "falsification": "if the cosine counterparts violate at a rate comparable to their step partners, the fresh-test split is an architecture effect and the stratification claim fails"
+  },
+  "hashes": {
+    "echostop/b5_confound.py": "3F4664AF488836A6BAE71BF477DDAC45897E10FAF7655866C0D77376425387AF",
+    "echostop/data.py": "E3CE1F2BF6CD8E91BBB0A0275AFA8DF4D6B2EEA914D3F2FCB651AC893D26AEE3",
+    "echostop/calibration.py": "3CEF501D725E7A574E88A7026A9319F1B0FB8F9927FF7D53BD5BF569234459D1"
+  },
+  "frozen_utc": "2026-10-27T15:56:55Z"
+}
