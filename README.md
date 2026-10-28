@@ -2,7 +2,9 @@
 
 Companion artefact of the paper *Early stopping, audited: curve extrapolation adds nothing, and the schedule decides*.
 
-> Repository: https://github.com/habibullahmanzoor/ecostop. Licence: MIT (see `LICENSE`). The version used in the paper is tagged `v1.0`.
+> Repository: https://github.com/habibullahmanzoor/ecostop. Licence: MIT (see `LICENSE`).
+> Tag `v1.0` is the released artefact. Its benchmark data, frozen protocols and analysis code are the
+> ones the paper uses; the manuscript itself has since been revised (see `paper/README.md`).
 
 ## About
 
@@ -37,7 +39,7 @@ so that energy is saved while a statistical guarantee bounds how often final acc
 | `code/` | All analysis code (`echostop/*.py`), `requirements.txt`, `matplotlibrc`. |
 | `results/` | Every result table as CSV/JSON that the paper's numbers and figures are computed from. |
 | `figures/` | The paper's figure PDFs (fonts embedded). |
-| `paper/` | LaTeX source and bibliography. |
+| `paper/` | LaTeX source and bibliography of the **earlier submitted version**; see `paper/README.md` for its status. |
 | `repo/` | A repository-layout copy (code, raw logs, small trace caches, frozen protocols) so that the analysis scripts run unchanged: `cd repo` and run the commands below. |
 | `SHA256SUMS.txt` | SHA-256 of every file in this release. |
 
@@ -73,3 +75,7 @@ The training scripts (`echostop/b1_train.py`, `c1_train.py`, `slm_train.py`) req
 ## Citation
 
 See `CITATION.cff`. URL: https://github.com/habibullahmanzoor/ecostop. Version: tag `v1.0`.
+* This README was revised to match the revised manuscript. Two statements it used to make are no
+  longer supported and have been removed: that the framework beats standard certification at the same
+  guarantee, and a job count that could not be derived from the released sets. The benchmark data,
+  the protocols and the code are unchanged.
