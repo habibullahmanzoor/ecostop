@@ -3,7 +3,7 @@
 Energy-metered learning curves and a matched-risk protocol for comparing early-stopping rules.
 
 923 training runs, of which 259 jobs and 897 runs carry the matched-risk analysis, with per-epoch validation and test accuracy and GPU-board energy measured through NVML on a single
-NVIDIA RTX 4080 Laptop GPU. Companion to the paper *Early stopping in neural networks depends on the learning-rate schedule not the curve*.
+NVIDIA RTX 4080 Laptop GPU. Companion to the paper *Early stopping in neural networks depends on the learning-rate schedule not the curve model*.
 
 ## Files
 

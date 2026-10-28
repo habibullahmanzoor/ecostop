@@ -1,6 +1,6 @@
 # EcoStop: benchmark, protocols, code and results
 
-Companion artefact of the paper *Early stopping in neural networks depends on the learning-rate schedule not the curve*.
+Companion artefact of the paper *Early stopping in neural networks depends on the learning-rate schedule not the curve model*.
 
 > Repository: https://github.com/habibullahmanzoor/ecostop. Licence: MIT (see `LICENSE`).
 > Tag `v1.0` is the released artefact. Its benchmark data, frozen protocols and analysis code are the
@@ -25,7 +25,7 @@ so that energy is saved while a statistical guarantee bounds how often final acc
   certified risk, learning-curve stopping -- including the pretrained LC-PFN -- is indistinguishable from a patience counter
   proportional to the schedule, and a pre-registered confirmatory study found no advantage for the curve rule.
 
-**Paper:** *Early stopping in neural networks depends on the learning-rate schedule not the curve* (Althobaiti, Manzoor, Manzoor, Ramzan).
+**Paper:** *Early stopping in neural networks depends on the learning-rate schedule not the curve model* (Althobaiti, Manzoor, Manzoor, Ramzan).
 **Code and data availability:** everything needed to recompute every number in the paper is in this repository.
 **Licence:** MIT.
 
