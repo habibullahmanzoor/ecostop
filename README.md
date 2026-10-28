@@ -1,25 +1,29 @@
 # EcoStop: benchmark, protocols, code and results
 
-Companion artefact of the paper *EcoStop: Certified Early Stopping for Energy-Efficient Training*.
+Companion artefact of the paper *Early stopping, audited: curve extrapolation adds nothing, and the schedule decides*.
 
 > Repository: https://github.com/habibullahmanzoor/ecostop. Licence: MIT (see `LICENSE`). The version used in the paper is tagged `v1.0`.
 
 ## About
 
-**EcoStop** is a framework and benchmark for *certified early stopping*: stopping a training run as soon as it is safe to,
+**EcoStop** is a procedure and benchmark for *certified early stopping*: stopping a training run as soon as it is safe to,
 so that energy is saved while a statistical guarantee bounds how often final accuracy is lost.
 
 * **Problem.** Early stopping is the cheapest lever for cutting training energy, but stopping rules are usually compared at
   hand-picked settings that hide the accuracy they risk.
 * **Method.** Stopping rules (learning-curve score, calibrated patience, LC-PFN) are replayed on measured training runs and
-  certified with Learn-then-Test fixed-sequence testing and betting p-values, with Bonferroni-corrected rule selection and a
-  scope card that abstains outside the calibration support.
-* **Data.** EcoStop-Bench: 923 GPU-metered (NVML) training runs, 271 jobs, 37,090 epoch rows across vision, tabular and NLP
+  certified with fixed-sequence testing and betting p-values, **stratified by declared learning-rate schedule family**, with
+  a gate that refuses to stop while a scheduled drop still lies ahead and abstention outside the calibration support.
+* **Data.** EcoStop-Bench: 923 GPU-metered (NVML) training runs, 37,090 epoch rows (259 jobs and 897 runs carry the matched-risk analysis) across vision, tabular and NLP
   fine-tuning, including a pre-registered confirmatory study on 41 new datasets.
-* **Findings.** Certification beats standard certification at the same guarantee, but calibrated patience is as good as the
-  learning-curve rule once risk is matched; the paper reports ties and negatives alongside the wins.
+* **Findings.** (a) The stratum is the schedule, not the domain: within one domain realised risk ranges from 0.158
+  (cosine-annealed) to 0.556 (one-cycle), and a domain partition cannot be both valid and useful, whereas stratifying by
+  declared schedule family holds the target while keeping 76% of the fresh energy. (b) Refusing to stop while a declared
+  drop lies ahead removes all six violations in twelve step-decay runs, at a measured cost in saving. (c) At matched
+  certified risk, learning-curve stopping -- including the pretrained LC-PFN -- is indistinguishable from a patience counter
+  proportional to the schedule, and a pre-registered confirmatory study found no advantage for the curve rule.
 
-**Paper:** *EcoStop: Certified Early Stopping for Energy-Efficient Training* (Althobaiti, Manzoor, Manzoor, Ramzan).
+**Paper:** *Early stopping, audited: curve extrapolation adds nothing, and the schedule decides* (Althobaiti, Manzoor, Manzoor, Ramzan).
 **Code and data availability:** everything needed to recompute every number in the paper is in this repository.
 **Licence:** MIT.
 
@@ -27,7 +31,7 @@ so that energy is saved while a statistical guarantee bounds how often final acc
 
 | Folder | What it holds |
 |---|---|
-| `ecostop_bench/` | **EcoStop-Bench**: `runs.csv.gz` (923 NVML-metered training runs, 271 jobs, 37,090 epoch rows), a self-contained loader and matched-risk protocol (`bench.py`), the data dictionary (`README.md`) and the exporter. Sets: `dev`, `fresh`, `c1`, `dev_extra`, `regime_freezethaw`, `repeat`. |
+| `ecostop_bench/` | **EcoStop-Bench**: `runs.csv.gz` (923 NVML-metered training runs, 37,090 epoch rows (259 jobs / 897 runs analysed)), a self-contained loader and matched-risk protocol (`bench.py`), the data dictionary (`README.md`) and the exporter. Sets: `dev`, `fresh`, `c1`, `dev_extra`, `regime_freezethaw`, `repeat`. |
 | `protocols/` | Frozen, hash-locked protocols: `b1_protocol.json` (fresh set), `c1_protocol.json` and `c1_manifest.json` (confirmatory study, SHA-256 `F11AA18D...C814EC07`), the written analysis plans, and a log of every deviation and decision (`DEVIATIONS_AND_DECISIONS.md`). |
 | `raw/` | Per-run CSV and metadata of the confirmatory study (`c1/`, including pre-run GPU state; quarantined runs in `c1/quarantine/`), the fresh set (`b1/`), the small-language-model pilot (`slm_pilot/`), GPU health logs and supervisor logs. |
 | `code/` | All analysis code (`echostop/*.py`), `requirements.txt`, `matplotlibrc`. |

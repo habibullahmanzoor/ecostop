@@ -2,8 +2,8 @@
 
 Energy-metered learning curves and a matched-risk protocol for comparing early-stopping rules.
 
-923 training runs (271 jobs) with per-epoch validation and test accuracy and GPU-board energy measured through NVML on a single
-NVIDIA RTX 4080 Laptop GPU. Companion to the paper *EcoStop: Certified Early Stopping for Energy-Efficient Training*.
+923 training runs, of which 259 jobs and 897 runs carry the matched-risk analysis, with per-epoch validation and test accuracy and GPU-board energy measured through NVML on a single
+NVIDIA RTX 4080 Laptop GPU. Companion to the paper *Early stopping, audited: curve extrapolation adds nothing, and the schedule decides*.
 
 ## Files
 
